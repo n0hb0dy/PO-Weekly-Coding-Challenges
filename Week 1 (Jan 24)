@@ -1,0 +1,23 @@
+def encrypt(string) -> str:
+	"""Will reverse a string, replace the vowels with corresponding values, and adds 'aca' in the end"""
+	return string[::-1].replace('a', r'0')\
+			       .replace('e', r'1')\
+			       .replace('i', r'2')\
+			       .replace('o', r'2')\
+			       .replace('u', r'3')\
+			       + 'aca'
+             
+print(encrypt('apple'))
+#'1lpp0aca'
+
+print(encrypt("banana"))
+#'0n0n0baca'
+
+print(encrypt("karaca"))
+#'0c0r0kaca'
+
+print(encrypt("burak"))
+#'k0r3baca'
+
+print(encrypt("alpaca"))
+#'0c0pl0aca'
